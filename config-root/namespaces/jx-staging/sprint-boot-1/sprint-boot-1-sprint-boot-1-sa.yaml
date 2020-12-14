@@ -1,0 +1,8 @@
+# Source: sprint-boot-1/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: sprint-boot-1-sprint-boot-1
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
