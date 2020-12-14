@@ -1,4 +1,8 @@
 filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
 namespace: jx-staging
 repositories:
 - name: dev
@@ -7,8 +11,7 @@ releases:
 - chart: dev/sprint-boot-1
   version: 0.0.1
   name: sprint-boot-1
-  forceNamespace: ""
-  skipDeps: null
+  values:
+  - jx-values.yaml
 templates: {}
-missingFileHandler: ""
 renderedvalues: {}
