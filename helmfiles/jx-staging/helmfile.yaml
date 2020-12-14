@@ -1,0 +1,14 @@
+filepath: ""
+namespace: jx-staging
+repositories:
+- name: dev
+  url: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts/
+releases:
+- chart: dev/sprint-boot-1
+  version: 0.0.1
+  name: sprint-boot-1
+  forceNamespace: ""
+  skipDeps: null
+templates: {}
+missingFileHandler: ""
+renderedvalues: {}
