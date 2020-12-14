@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: qianweichun
+    provider: github
+    repository: sprint-boot-1
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: qianweichun-sprint-boot-1
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/qianweichun/sprint-boot-1.git
+  org: qianweichun
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: sprint-boot-1
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/qianweichun/sprint-boot-1
