@@ -30,16 +30,20 @@ jxRequirements:
     provider: minikube
   environments:
   - key: dev
+    owner: qianweichun
+    repository: jx3-install
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: 192.168.82.5.nip.io
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: qianweichun
   repository: bucketrepo
   secretStorage: vault
   vault: {}
